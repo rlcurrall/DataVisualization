@@ -1,5 +1,3 @@
-# CSCI B466
-
 package require vtk
 package require vtkinteraction
 
