@@ -123,47 +123,88 @@ renWin Render
 after 1000
 
 
-# ----------- Animate the vibration --------------------------
+# ----------- Animation --------------------------
 # Using vector data "mode1"
+plate SetVectorsName "mode1"
 for {set i 0} {$i<=30} {incr i} {
-	warp SetScaleFactor [expr ($i/10.0)*pow(-1,$i)]
+	warp SetScaleFactor [expr ($i/30.0)]
 	renWin Render
-	after 400
+	after 40
+}
+after 1000
+
+plate SetVectorsName "mode1"
+for {set i 30} {$i>=0} {incr i -1} {
+	warp SetScaleFactor [expr ($i/30.0)]
+	renWin Render
+	after 40
 }
 after 1000
 
 # Using vector data "mode2"
 plate SetVectorsName "mode2"
 for {set i 0} {$i<=30} {incr i} {
-	warp SetScaleFactor [expr ($i/10.0)*pow(-1,$i)]
+	warp SetScaleFactor [expr ($i/30.0)]
 	renWin Render
-	after 400
+	after 40
+}
+after 1000
+
+plate SetVectorsName "mode2"
+for {set i 30} {$i>=0} {incr i -1} {
+	warp SetScaleFactor [expr ($i/30.0)]
+	renWin Render
+	after 40
 }
 after 1000
 
 # Using vector data "mode3"
 plate SetVectorsName "mode3"
 for {set i 0} {$i<=30} {incr i} {
-	warp SetScaleFactor [expr ($i/10.0)*pow(-1,$i)]
+	warp SetScaleFactor [expr ($i/30.0)]
 	renWin Render
-	after 400
+	after 40
+}
+after 1000
+
+plate SetVectorsName "mode3"
+for {set i 30} {$i>=0} {incr i -1} {
+	warp SetScaleFactor [expr ($i/30.0)]
+	renWin Render
+	after 40
 }
 after 1000
 
 # Using vector data "mode4"
 plate SetVectorsName "mode4"
 for {set i 0} {$i<=30} {incr i} {
-	warp SetScaleFactor [expr ($i/10.0)*pow(-1,$i)]
+	warp SetScaleFactor [expr ($i/30.0)]
 	renWin Render
-	after 400
+	after 40
+}
+after 1000
+
+plate SetVectorsName "mode4"
+for {set i 30} {$i>=0} {incr i -1} {
+	warp SetScaleFactor [expr ($i/30.0)]
+	renWin Render
+	after 40
 }
 after 1000
 
 # Using vector data "mode5"
 plate SetVectorsName "mode5"
 for {set i 0} {$i<=30} {incr i} {
-	warp SetScaleFactor [expr ($i/10.0)*pow(-1,$i)]
+	warp SetScaleFactor [expr ($i/30.0)]
 	renWin Render
-	after 400
+	after 40
+}
+after 1000
+
+plate SetVectorsName "mode5"
+for {set i 30} {$i>=0} {incr i -1} {
+	warp SetScaleFactor [expr ($i/30.0)]
+	renWin Render
+	after 40
 }
 after 1000
